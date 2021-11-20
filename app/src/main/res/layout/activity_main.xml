@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textColor="@color/white"
+        android:text="Nghe Nhạc"
+        android:textSize="50sp"
+        android:background="@color/purple_500"
+        android:textAlignment="center"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight= "0.15"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edtBai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bài 1"
+            android:textSize="30dp"
+            android:textAlignment="center"/>
+
+        <SeekBar
+            android:id="@+id/skSong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight= "0.05"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnChonBH"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="Chọn bài hát"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:onClick="ButtonClick"/>
+
+        <Button
+            android:id="@+id/btnPlay"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="Play"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:onClick="ButtonClick"/>
+
+        <Button
+            android:id="@+id/btnPause"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="Pause"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:onClick="ButtonClick"/>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
